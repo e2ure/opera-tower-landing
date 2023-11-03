@@ -1,0 +1,27 @@
+/*
+    paleta de colores: #e8c38e, #cd9e5a, #035946, #033033, #031324
+*/
+
+:root {
+    --button-color: #035946;
+    --background-color: #e8c38e;
+    --font-color: #033033;
+    --color-one: #cd9e5a;
+    --color-tow: #031324;
+    --font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+}
+
+.residences {
+    background-color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.residences h1 {
+    color: var(--font-color);
+    font-family: var(--font-family);
+}

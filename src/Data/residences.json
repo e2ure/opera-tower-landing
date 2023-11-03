@@ -1,0 +1,20 @@
+[
+    {
+        "type":"studio-size",
+        "starting-price": 150000.00,
+        "bath": 1,
+        "distribution-plant": "/studio.img"
+    },
+    {
+        "type":"mid-size",
+        "starting-price": 200000.00,
+        "bath": 1,
+        "distribution-plant": "/studio.img"
+    },
+    {
+        "type":"full-size",
+        "starting-price": 300000.00,
+        "bath": 2,
+        "distribution-plant": "/studio.img"
+    }
+]
