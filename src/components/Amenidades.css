@@ -1,0 +1,16 @@
+.Amenidades {
+    background-color: #033033;
+    height: 500px;
+}
+
+.Titulo {
+    color: #e8c38e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Carousel {
+    position: absolute;
+    bottom: 0;
+}
