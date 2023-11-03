@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from "react";
-const usdExchangeDefault = {value:1,simbol:"$",iso: 'USD'};
 
-const ExchangeRate = ({onChange,currentDay}) =>{
+
+const ExchangeRate = ({onChange,currentDay,usdExchangeDefault}) =>{
     const [colonValue, setColonValue] = useState(null)
 
     useEffect(()=>{
@@ -11,12 +11,18 @@ const ExchangeRate = ({onChange,currentDay}) =>{
         .then( data => setColonValue({value:data.venta,simbol:"₡",iso:"CRC"}))
     },[]);
 
+    const handleChange = (event) =>{
+        const isoValue = event.target.value;
+        const selectedValue = isoValue === 'USD' ? usdExchangeDefault : colonValue;
+        onChange(selectedValue);
+    }
+
     return (
         <div>
             <label>Seleccione la moda:</label>
-            <select onChange={(event) =>{ onChange(event.target.value)}}>
-                <option value={usdExchangeDefault}>{usdExchangeDefault.iso}</option>
-                <option value={colonValue}>{colonValue.iso}</option>
+            <select onClick={handleChange}>
+                <option key={usdExchangeDefault} value={usdExchangeDefault.iso}>{usdExchangeDefault.iso}</option>
+                {(colonValue && <option value={colonValue.iso}>{colonValue.iso}</option>)}
             </select>
         </div>
     );

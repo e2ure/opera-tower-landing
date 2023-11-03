@@ -12,16 +12,33 @@
 }
 
 .residences {
-    background-color: var(--background-color);
+    background-color: var(--background-color) 1;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 200px;
+    flex-direction: row;
 }
 
+.residences .item{
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+}
+
+.residences .item img{
+    max-width: 800px;
+    min-height: 480px;
+    width: 800px;
+    height: 480px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .residences h1 {
     color: var(--font-color);
     font-family: var(--font-family);
+    font-size: 3rem;
+    font-weight: bold;
 }
