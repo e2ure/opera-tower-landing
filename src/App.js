@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
+import {Routes, Route} from 'react-router-dom'
 import './App.css';
 import Residences from './Components/Residences';
-import ExchangeRate from './Components/ExchangeRate';
+import Navbar from './Components/Navbar';
+import ResidencesDetails from './Components/ResidencesDetails';
 
 const usdExchangeDefault = {value:1,simbol:"$",iso: 'USD'};
 
@@ -10,8 +12,16 @@ function App() {
   
   return (
     <div className="App">
-      <ExchangeRate currentDay={new Date()} onChange={setActualExchange} usdExchangeDefault={usdExchangeDefault}/>
-      <Residences exchangeValue={actualExchange}/>
+      <div><Navbar onChange={setActualExchange} usdExchangeDefault={usdExchangeDefault}/></div>
+      {/* <ExchangeRate currentDay={new Date()} onChange={setActualExchange} usdExchangeDefault={usdExchangeDefault}/>
+      <Residences exchangeValue={actualExchange}/> */}
+      <div>
+        <Routes>
+          <Route path='/' element={<Residences  exchangeValue={actualExchange}/>}/>
+          <Route path='/residences' element={<Residences  exchangeValue={actualExchange}/>}/>
+          <Route path='/residences-details' element={<ResidencesDetails exchangeValue={actualExchange} />}/>
+        </Routes>
+      </div>
     </div>
   );
 }
