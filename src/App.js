@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 import AboutUs from './components/AboutUs';
+import Amenidades from "./components/Amenidades";
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
+      <Amenidades />
       <AboutUs />
     </div>
+    
   );
-}
+};
 
 export default App;
