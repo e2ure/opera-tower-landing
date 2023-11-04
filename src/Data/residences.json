@@ -1,0 +1,32 @@
+[
+    {
+        "description": "Apartamento tipo estudio",
+        "type":"studio-size",
+        "starting-price": 150000.00,
+        "bath": 1,
+        "distribution-plant": "/studio.img",
+        "livingArea": 46.7,
+        "balcony": 7.7,
+        "totalArea": 54.4
+    },
+    {
+        "description": "Apartamento de 1 cuarto y 1 baño",
+        "type":"mid-size",
+        "starting-price": 200000.00,
+        "bath": 1,
+        "distribution-plant": "/studio.img",
+        "livingArea": 76.2,
+        "balcony": 12.5,
+        "totalArea": 88.7
+    },
+    {
+        "description": "Apartamento de 2 cuartos y 2 baños",
+        "type":"full-size",
+        "starting-price": 300000.00,
+        "bath": 2,
+        "distribution-plant": "/studio.img",
+        "livingArea": 97.4,
+        "balcony": 16.4,
+        "totalArea": 113.8
+    }
+]
