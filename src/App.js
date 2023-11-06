@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import {Routes, Route} from 'react-router-dom'
 import './App.css';
-import AboutUs from './components/AboutUs';
+import AboutUs from './components/About';
 import Amenidades from "./components/Amenidades";
 
 import Residences from './components/Residences';
 import Navbar from './components/Navbar';
 import ResidencesDetails from './components/ResidencesDetails';
+import Footer from './components/Footer';
 
 const usdExchangeDefault = {value:1,simbol:"$",iso: 'USD'};
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/residences-details' element={<ResidencesDetails exchangeValue={actualExchange} />}/>
         </Routes>
       </div>
+      <Footer />
     </div>
     
   );

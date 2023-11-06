@@ -14,7 +14,7 @@ h2 {
     padding-bottom: 15px;
 }
 
-.sectionAboutUs {
+.section-about {
     background-color: var(--main-color-four);
     color: var(--main-color-five);
     width: 100%;
@@ -26,19 +26,19 @@ h2 {
     text-wrap: wrap;
 }
 
-.companyInfo {
+.company-info {
     font-size: large;
     font-weight: bold;
     margin: auto;
     width: 25%;
 }
 
-.otherProjects {
+.other-projects {
     margin: auto;
     width: 50%;
 }
 
-.otherProjectsItem img{
+.other-projects-item img{
     margin: 15px;
     
     width: 150px;
@@ -51,17 +51,17 @@ h2 {
 	transition: .3s ease-in-out;
 }
 
-.otherProjectsItem img:hover{
+.other-projects-item img:hover{
     -webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
 
-.contactInfo {
+.contact-info {
     margin: auto;
     width: 25%;
 }
 
-.contactInfoItem {
+.contact-info-item {
     color: var(--main-color-five);
     text-decoration: none;
     font-style: normal !important;
