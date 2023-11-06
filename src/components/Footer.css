@@ -40,8 +40,10 @@ footer h6 {
 }
 
 .footer-developer{
+    min-width: max-content;
     width: 20%;
     float: right;
+    margin-right: 5px;
 }
 
 .footer-developer a {

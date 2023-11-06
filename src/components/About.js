@@ -1,6 +1,9 @@
 import React from "react";
 import { MdPhone, MdLocationPin, MdWhatsapp, MdMailOutline } from "react-icons/md";
 import "./About.css";
+import edificio0Img from "./images/edificio0.jpg";
+import edificio1Img from "./images/edificio1.jpeg";
+import edificio2Img from "./images/edificio2.jpg";
 
 const AboutUs = () => {
 
@@ -16,13 +19,13 @@ const AboutUs = () => {
             <div className="other-projects">
                 <h2>Proyectos exitosos</h2>
                 <a className="other-projects-item" href="https://citymap.com.gt/propiedades/torre-zentia/">
-                    <img className="other-projects-item-image" src={require('./../Images/edificio0.jpg')} alt="Zentia" width="100" height="132" />
+                    <img className="other-projects-item-image" src={edificio0Img} alt="Zentia" width="100" height="132" />
                 </a>
                 <a className="other-projects-item" href="https://www.olimare.com/bienes-raices-republica-dominicana/santiago/-se-vende-torres-de-apartamentos-con-diseno-de-vanguardia-y-ultima-generacion-en-la-ci-5661.php">
-                    <img src={require('./../Images/edificio1.jpeg')} alt="Olimare" width="100" height="132" />
+                    <img src={edificio1Img} alt="Olimare" width="100" height="132" />
                 </a>
                 <a className="other-projects-item" href="https://sinigual.org/etihad-towers-abu-dhabi/">
-                    <img src={require('./../Images/edificio2.jpg')} alt="Etihad" width="100" height="132" />
+                    <img src={edificio2Img} alt="Etihad" width="100" height="132" />
                 </a>
             </div>
             <div className="contact-info">
