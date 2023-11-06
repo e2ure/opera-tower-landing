@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from "react";
-
+import Form from 'react-bootstrap/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ExchangeRate = ({onChange,currentDay,usdExchangeDefault}) =>{
     const [colonValue, setColonValue] = useState(null)
@@ -20,10 +21,10 @@ const ExchangeRate = ({onChange,currentDay,usdExchangeDefault}) =>{
     return (
         <div>
             <label>Seleccione la moda:</label>
-            <select onClick={handleChange}>
+            <Form.Select onClick={handleChange}>
                 <option key={usdExchangeDefault} value={usdExchangeDefault.iso}>{usdExchangeDefault.iso}</option>
                 {(colonValue && <option value={colonValue.iso}>{colonValue.iso}</option>)}
-            </select>
+            </Form.Select>
         </div>
     );
 }

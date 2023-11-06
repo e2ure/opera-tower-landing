@@ -18,13 +18,19 @@ function App() {
     <div className="App">
       <div><Navbar onChange={setActualExchange} usdExchangeDefault={usdExchangeDefault}/></div>
       <div>
-        <Routes>
-          <Route path='/' element={<Residences  exchangeValue={actualExchange}/>}/>
-          <Route path='/about' element={<AboutUs/>}/>
-          <Route path='/amenities' element={<Amenidades/>}/>
-          <Route path='/residences' element={<Residences  exchangeValue={actualExchange}/>}/>
-          <Route path='/residences-details' element={<ResidencesDetails exchangeValue={actualExchange} />}/>
+         <Routes>
+          {/* <Route path='/' exact Component={<Residences  exchangeValue={actualExchange}/>}/> */}
+          <Route path='/residences-details' exact Component={<ResidencesDetails exchangeValue={actualExchange} />}/>
         </Routes>
+        <section id='residences'>
+          <Residences  exchangeValue={actualExchange}/>
+        </section>
+        <section id='amenities'> 
+          <Amenidades/>
+        </section>        
+        <section id='about'>
+          <AboutUs/>
+        </section>
       </div>
       <Footer />
     </div>
