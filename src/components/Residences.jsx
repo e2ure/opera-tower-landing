@@ -1,7 +1,7 @@
 import React from "react";
 import './Residences.css'
 import residencesImg from './images/Residence.jpg'
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 const Residences = ({exchangeValue}) =>{
     const startingValue = 150000

@@ -11,6 +11,22 @@ import Footer from './components/Footer';
 
 const usdExchangeDefault = {value:1,simbol:"$",iso: 'USD'};
 
+const Main = ({actualExchange}) => {
+  return(
+    <main>
+      <section id='residences'>
+        <Residences  exchangeValue={actualExchange}/>
+      </section>
+      <section id='amenities'> 
+        <Amenidades/>
+      </section>        
+      <section id='about'>
+        <AboutUs/>
+      </section>
+    </main>
+  );
+}
+
 function App() {
   const [actualExchange, setActualExchange] = useState(usdExchangeDefault);
   
@@ -18,19 +34,11 @@ function App() {
     <div className="App">
       <div><Navbar onChange={setActualExchange} usdExchangeDefault={usdExchangeDefault}/></div>
       <div>
+        
          <Routes>
-          {/* <Route path='/' exact Component={<Residences  exchangeValue={actualExchange}/>}/> */}
-          <Route path='/residences-details' exact Component={<ResidencesDetails exchangeValue={actualExchange} />}/>
+          <Route path='/' exact element={<Main actualExchange={actualExchange}/>}/>
+          <Route path='/residences-details' element ={<ResidencesDetails exchangeValue={actualExchange} />}/>
         </Routes>
-        <section id='residences'>
-          <Residences  exchangeValue={actualExchange}/>
-        </section>
-        <section id='amenities'> 
-          <Amenidades/>
-        </section>        
-        <section id='about'>
-          <AboutUs/>
-        </section>
       </div>
       <Footer />
     </div>

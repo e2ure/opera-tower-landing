@@ -12,7 +12,7 @@
 }
 
 .residences-details {
-    background-color: var(--background-color);
+    background-color: var(--color-one);
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -20,6 +20,7 @@
     min-height: 200px;
     flex-direction: row;    
     font-family: var(--font-family);
+    padding-top: 50px;
 }
 
 .tilte-img {

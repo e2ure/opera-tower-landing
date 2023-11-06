@@ -9,7 +9,7 @@ const Navbar = ({onChange,usdExchangeDefault}) =>{
         <div className='navbar'>
             <nav>
                 <ul className='nav-container'>
-                    <li className='nav-item'><Link to="/">Inicio</Link></li>
+                    <li className='nav-item' id='home'><Link to="/">Inicio</Link></li>
                     <li className='nav-item'><ScrollLink to="amenities">Amenidades</ScrollLink></li>
                     <li className='nav-item'><ScrollLink to="residences">Apartamentos</ScrollLink></li>
                     <li className='nav-item'><ScrollLink to="about">Sobre Nosotros</ScrollLink></li>
