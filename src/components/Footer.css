@@ -25,10 +25,9 @@ footer h6 {
     font-weight: bold;
 }
 
-footer a {
+.footer-socials a {
     text-decoration: none;
-    text-shadow: #035946;
-    color: crimson;
+    color: var(--main-color-four);
 }
 
 .footer-socials{
@@ -45,7 +44,10 @@ footer a {
     float: right;
 }
 
-
+.footer-developer a {
+    text-decoration: none;
+    color: crimson;
+}
 
 .developer-icon {
     color: var(--main-color-second);

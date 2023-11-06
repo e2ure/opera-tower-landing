@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { MdToken } from "react-icons/md";
-import { IconName, SiFacebook, SiInstagram } from "react-icons/si";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 
 const Footer = () => {
 
@@ -9,10 +9,13 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-socials">
                 <h5>Siguenos en
-                    <SiFacebook className="socials-icon" />
-                    <SiInstagram className="socials-icon" />
+                    <a href="www.feisbu.com/opera-tower">
+                        <SiFacebook className="socials-icon" />
+                    </a>
+                    <a href="www.insta.com/opera-tower">
+                        <SiInstagram className="socials-icon" />
+                    </a>
                 </h5>
-
             </div>
             <div className="footer-developer">
                 <h6>Desarrollado por &nbsp;
