@@ -1,0 +1,57 @@
+:root {
+    --main-color-first: #cd9e5a;  /*fondo sección*/
+    --main-color-second: #033033; 
+    --main-color-third: #035946;  /*texto*/
+    --main-color-four: #031324;
+    --main-color-five: #e8c38e;   /*fondo subsección*/
+    --footer-height: 150px;
+}
+
+footer {
+    height: var(--footer-height);
+    background-color: var(--main-color-five);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h5 {
+    color: var(--main-color-four);
+    font-weight: bolder;
+}
+
+footer h6 {
+    color: var(--main-color-four);
+    font-weight: bold;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: var(--main-color-four);
+}
+
+.footer-socials{
+    width: 100%;
+}
+
+.socials-icon{
+   margin: 0 10px 0 10px; 
+   font-size: xx-large;
+}
+
+.footer-developer{
+    min-width: max-content;
+    width: 20%;
+    float: right;
+    margin-right: 5px;
+}
+
+.footer-developer a {
+    text-decoration: none;
+    color: crimson;
+}
+
+.developer-icon {
+    color: var(--main-color-second);
+    font-size: xx-large;
+}

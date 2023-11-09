@@ -1,0 +1,75 @@
+/*
+    paleta de colores: #e8c38e, #cd9e5a, #035946, #033033, #031324
+*/
+
+:root {
+    --button-color: #035946;
+    --background-color: #e8c38e;
+    --font-color: #033033;
+    --color-one: #cd9e5a;
+    --color-tow: #031324;
+    --font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+}
+
+.residences-details {
+    background-color: var(--color-one);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    flex-direction: row;    
+    font-family: var(--font-family);
+    padding-top: 50px;
+}
+
+.tilte-img {
+    max-width: 960px;
+    min-height: 480px;
+    width: 960px;
+    height: 480px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -moz-box-shadow:  -4px 0 17px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:  -4px 0 17px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 17px 5px rgba(0, 0, 0, 0.2);
+}
+.residences-details h1 {
+    color: var(--font-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.residences-details h2 {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: start;
+    text-align: center;
+}
+.apartments-img{
+    max-width: 280px;
+    min-height: 250px;
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -moz-box-shadow:  -4px 0 17px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:  -4px 0 17px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 17px 5px rgba(0, 0, 0, 0.2);
+}
+
+.apartments {
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    flex-direction: row;
+    display: flex;
+}
+
+.apartments .item{
+    flex-basis: 58.3333333333%;
+    max-width: 58.3333333333%;
+}
